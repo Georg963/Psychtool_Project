@@ -1,7 +1,6 @@
 % function drawing the cues and returning the VBLTimestamp
 function [tar_VBL, tar_SOT, tar_FT] = Procedure(wPtr, trial_SOT, cue_condition, target_condition, center_x, center_y)
     s = 0;
-    
     switch cue_condition
         case 0
             s = s + 0.2;

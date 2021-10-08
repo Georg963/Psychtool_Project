@@ -31,7 +31,6 @@ function [] = savedata(fid, answer, trial, cue, target , ReactionTime, keyPresse
         accuracy = 1; 
     end
     
-    
     fprintf(fid, '%d %d %s %s %d %d %d %d %d %d %d \n' , ...
         id, age, hand, gender, trial, cue, target, ...
         trialType, response, rt, accuracy);
